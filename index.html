@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Vertical navbar -->
+    <div class="vertical-nav bg-vertical-menu " id="sidebar">
+        <div class="py-1 px-1 " style="text-align: center;">
+            <img src="img/logo.png" alt="..." width="200px">
+        </div>
+        <ul class="nav flex-column  mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark  ">
+                    <i class="fa fa-address-book mr-3 text-primary fa-fw" aria-hidden="true"></i>
+
+                    My Account
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+
+                    <i class="fa fa-user-secret mr-3 text-primary fa-fw"></i>
+                    My Dentist
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+
+                    <i class="fa  fa-file-text-o mr-3 text-primary fa-fw"></i>
+                    Digital Forms
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-snowflake-o mr-3 text-primary fa-fw"></i>
+                    Covid19-Screening
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-desktop mr-3 text-primary fa-fw"></i>
+                    Custom Website
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                    Custom Widgets
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-i-cursor mr-3 text-primary fa-fw"></i>
+                    Mouth Cam
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-question-circle mr-3 text-primary fa-fw"></i>
+                    Help
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark ">
+                    <i class="fa fa-sign-out mr-3 text-primary fa-fw"></i>
+                    Logout
+                </a>
+            </li>
+            <div class="py-1 px-3  " style="text-align: center;">
+                <img src="img/app-img.png" alt="..." width="130px">
+
+            </div>
+
+
+        </ul>
+    </div>
+    <!-- End vertical navbar -->
+
+
+    <!-- Page horizontal  -->
+    <div class="page-content " id="content">
+        <!--  horizontal navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button id="sidebarCollapse" type="button"
+                class="btn btn-light bg-white rounded-pill shadow-sm px-4 hidden-lg"><i
+                    class="fa fa-bars mr-2"></i></button>
+            <div class="py-1 px-1 hidden-lg " style="text-align: center;">
+                <img src="img/logo.png" alt="..." width="150px">
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 hor-nav">
+                    <li class="nav-item active ">
+                        <a class="nav-link" href="#">My Appointments<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Patients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Chat History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Direct Connect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Notifications</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="img/user.jpg" alt="Header Avatar">
+                            <span class=" d-sm-inline-block ml-1">Hello Jonn</span>
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end"
+                            style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-20px, 70px, 0px);">
+
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                Profile
+
+                            </a>
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                Settings
+                            </a>
+
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)">
+                                <span>Log Out</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </nav>
+
+        <!--end horizontal navbar -->
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- appoiment  -->
+                <div class="col-lg-4">
+                    <div class="appiment-main ">
+                        <h6><i class="fa fa-address-book mr-3" aria-hidden="true"></i>Today
+                            Appointments</h6>
+                        <div class="appoiment-line">
+                            <h6>08.00</h6>
+                            <h6 style="margin-bottom:0% !important;">07.00</h6>
+                            <div class="example">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">06.00 pm - 06.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-top:0 !important;">06.00</h6>
+                            <h6 style="margin-bottom:0%;
+    margin-top:0%;">05.00</h6>
+                            <div class="example">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">04.00 pm - 04.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-top:0 !important;">04.00</h6>
+                            <h6>03.00</h6>
+                            <h6>02.00</h6>
+                            <div class="example" style="margin-top: -17%;">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">00.00 pm - 02.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-top:0 !important;">01.00</h6>
+                            <h6>12.00</h6>
+
+                            <h6>11.00</h6>
+                            <div class="example" style="margin-top: -17%;">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">11.00 pm - 11.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-bottom: 0%;
+    margin-top: 0%;">10.00</h6>
+                            <div class="example">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">06.00 pm - 06.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-top:0 !important;">09.00</h6>
+                            <h6>08.00</h6>
+                            <h6>07.00</h6>
+                            <div class="example" style="margin-top: -17%;">
+                                <div class="media mb-3">
+                                    <img class="d-flex appoiment-img rounded-circle" src="img/user.jpg">
+                                    <div class="media-body">
+                                        <h6 class="appoiment-head">Mrs Anu</h6>
+                                        <p class="appoiment-para">07.00 pm - 07.30 pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 style="margin-top:0 !important;">06.00</h6>
+                        </div>
+                    </div>
+                </div>
+                <!-- end appoiment -->
+                <div class="col-lg-8">
+                    <!-- daskboard -->
+                    <div class="row">
+
+                        <!--team-1-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon1.png" alt="...">
+                                    <p>My Patients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-1-->
+
+                        <!--team-2-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon2.png" alt="...">
+                                    <p>Direct Connect</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-2-->
+
+                        <!--team-3-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon3.png" alt="...">
+                                    <p>My Account</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-3-->
+
+                        <!--team-4-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon4.png" alt="...">
+                                    <p>Video / Chat History</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-4-->
+
+                        <!--team-5-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon5.png" alt="...">
+                                    <p>Forms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-5-->
+
+                        <!--team-6-->
+                        <div class="col-lg-4">
+                            <div class="our-team-main">
+
+                                <div class="team-front">
+                                    <img src="img/icon6.png" alt="...">
+                                    <p>Shop</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--team-6-->
+                    </div>
+                    <!-- daskboard end -->
+                    <!-- news -->
+                    <div>
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu1">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#menu2">Blog</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="home" class=" tab-pane active box-tab-cont"><br>
+                                <div class="news-main">
+
+                                    <button type="button" class="btn  btn-sm news-btn">Tips</button>
+                                    <h3 class="news-head">As dental offices are getting and resume a full scope of care,
+                                    </h3>
+                                    <p class="news-para">some dental hygienistics are resing their concerns.</p>
+                                    <p class="news-fotor">34 min age from jon admin.</p>
+
+                                </div>
+
+                                <div class="news-main">
+
+                                    <button type="button" class="btn  btn-sm news-btn"
+                                        style="background-color: #db9b07;">Tips</button>
+                                    <h3 class="news-head">As dental offices are getting and resume a full scope of care,
+                                    </h3>
+                                    <p class="news-para">some dental hygienistics are resing their concerns.</p>
+
+
+                                    <p class="news-fotor">34 min age from jon admin.</p>
+
+                                </div>
+                                <div class="news-main">
+
+                                    <button type="button" class="btn  btn-sm news-btn">Tips</button>
+                                    <h3 class="news-head">As dental offices are getting and resume a full scope of care,
+                                    </h3>
+                                    <p class="news-para">some dental hygienistics are resing their concerns.</p>
+
+
+                                    <p class="news-fotor">34 min age from jon admin.</p>
+
+                                </div>
+
+                            </div>
+                            <div id="menu1" class="container tab-pane fade"><br>
+
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo
+                                    consequat.</p>
+                            </div>
+                            <div id="menu2" class="container tab-pane fade"><br>
+
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque laudantium, totam
+                                    rem aperiam.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- news end -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End demo content -->
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js">
+    </script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js">
+    </script>
+    <script type="text/javascript" src="js/main.js">
+    </script>
+</body>
+
+</html>
